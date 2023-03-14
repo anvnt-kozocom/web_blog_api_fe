@@ -1,0 +1,174 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;1,300;1,400&family=Moon+Dance&display=swap');
+body {
+  margin: 0;
+  font-family: 'Be Vietnam Pro', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #efefef;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+.rich-editor .rdw-editor-main {
+  background-color: #fff;
+}
+
+.rich-editor .DraftEditor-editorContainer {
+  padding: 1rem;
+}
+
+.draft-editor-wrapper {
+  border: 1px solid #ccc;
+}
+.scroll {
+  overflow-y: hidden;
+}
+.scroll:hover {
+  overflow-y: scroll;
+}
+.scroll::-webkit-scrollbar {
+  width: 4px;
+  height: 4px !important;
+}
+/* Track */
+.scroll::-webkit-scrollbar-track {
+  border-radius: 2px;
+}
+/* Handle */
+.scroll::-webkit-scrollbar-thumb {
+  background: #aaa;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+.scroll::-webkit-scrollbar-thumb:hover {
+  background: #aaa;
+  display: block;
+}
+
+/* slick slide */
+.slick-slider{
+  max-width: 900px;
+}
+.slick-list{
+  display: flex;
+}
+.slick-track{
+  /* height: 00px !important; */
+  display: flex;
+
+}
+.slick-slide.slick-active{
+  margin: 0 6px;
+}
+.slick-arrow.slick-next{
+  color: red;
+  background-color:rgb(113, 231, 162);
+  border-radius: 50%;
+  right: 10px;
+}
+.slick-slider.slick-initialized{
+  margin: 0 auto;
+}
+.slick-arrow.slick-prev{
+  color: red;
+  background-color:rgb(113, 231, 162);
+  border-radius: 50%;
+  left: 10px;
+  z-index: 1;
+}
+@media only screen and (max-width: 640px) {
+  .slick-slider {
+    /* max-width: 280px; */
+    max-width: 246px;
+  }
+  .slick-list {
+    margin: auto;
+    width: 100%;
+  }
+
+}
+@media only screen and (max-width: 1023px) {
+  .slick-slider {
+    max-width: 530px;
+  }
+  .slick-list {
+    margin: auto;
+    width: 100%;
+  }
+}
+
+
+/* cancel text  image*/
+input[type="file"]::before {
+  content: "Chọn ảnh";
+  display: inline-block;
+  background-color: #4a5568;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+input[type="file"]::-webkit-file-upload-button {
+  visibility: hidden;
+}
+
+input[type="file"]::before, input[type="file"]::-webkit-file-upload-button {
+  margin-right: 10px;
+  font-size: 14px;
+  font-weight: 500;
+} 
+
+input[type="file"]:focus ~ span {
+  border-color: #4a5568;
+}
+
+input[type="file"] {
+  border: 1px solid #e2e8f0;
+  padding: 6px 10px;
+  border-radius: 3px;
+  width: 100%;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #4a5568;
+  background-color: white;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+input[type="file"]:hover {
+  border-color: #1fa4f2;
+}
+
+input[type="file"]:focus {
+  outline: none;
+  border-color: #4a5568;
+  box-shadow: 0 0 0 3px rgba(74, 85, 104, 0.2);
+}
+
+input[type="file"] + span {
+  display: inline-block;
+  margin-left: 10px;
+  color: #4a5568;
+  font-size: 14px;
+  font-weight: 500;
+}
+/*  */
+/* ckeditor */
+.ck-editor__editable {
+  min-height: 150px;
+  
+}
+
+.ck.ck-reset.ck-editor.ck-rounded-corners{
+  max-width: 500px !important;
+  padding: 2px 6px;
+}
