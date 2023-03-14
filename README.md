@@ -19,7 +19,7 @@ Frontend JavaScript node(v16.14.2), Yarn
 1. Clone the repository: (https://github.com/Anvo8222/web_blog_api_fe.git)
 2. Install dependencies: yarn install
 3. Yarn start
-4. Open your web browser and visit http://localhost:8000
+4. Open your web browser and visit http://localhost:3000
 
 
 ## API documentation
